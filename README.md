@@ -550,8 +550,23 @@ Bu zorluklarla başa çıkmak için aşağıdaki yöntemler uygulandı:
 
 Bu yöntemlerin uygulanması sonucunda, GAN modelinin stabilitesi önemli ölçüde artırıldı ve daha kaliteli, tutarlı sonuçlar elde edildi. Projenin başarısı için bu dengeyi sağlamak ve en uygun hiperparametre ile mimariyi belirlemek kritik oldu.
 
+### 🎨 11.Uygulama Arayüzleri
 
+#### Ana Arayüz
+![Ana Arayüz](https://github.com/user-attachments/assets/b140d584-cf8a-4adc-8f97-e5fbb0da9f48)
 
+---
 
+#### 📷 Colorization (Renklendirme)
+![Colorization Arayüzü](https://github.com/user-attachments/assets/64448fc5-e184-4543-92dc-aed46649e252)
 
+---
+
+#### 🧩 Inpainting (Görüntü Onarma)
+![Inpainting Arayüzü](https://github.com/user-attachments/assets/b207fdc0-115d-4931-89ff-835a1cf54b1f)
+
+---
+
+#### 🧹 Denoising (Gürültü Giderme)
+![Denoising Arayüzü](https://github.com/user-attachments/assets/9b853636-168b-42d2-b63e-ed949ff05900)
 
