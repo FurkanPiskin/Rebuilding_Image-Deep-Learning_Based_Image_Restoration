@@ -135,7 +135,7 @@ GAN tabanlı renk ekleme sistemi:
 
 - **Discriminator:** 4 katmanlı PatchGAN, 70x70 piksellik patchler üzerinden gerçeklik değerlendirmesi.
 
- <img src="images/4.jpg" />
+ <img src="images/4.png" />
 
 **Kayıp Fonksiyonları:**
 
