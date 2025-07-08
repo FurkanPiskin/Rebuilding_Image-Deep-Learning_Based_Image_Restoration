@@ -102,7 +102,7 @@ Inpainting modeli, eksik veya hasarlı görüntü bölgelerini, çevresel bağla
 #### 🔹 Giriş Verisi
 - **Generator**, **4 kanallı bir girdi** alır:
   - İlk 3 kanal: Maskelenmiş RGB görüntü (`R, G, B`)
-  - 4. kanal: Maskeyi temsil eden ikili harita (0 = eksik, 1 = sağlam)=>Maske siyah ile temsil edilmiştir.
+  - 4.kanal: Maskeyi temsil eden ikili harita (0 = eksik, 1 = sağlam)=>Maske siyah ile temsil edilmiştir.
 - Bu giriş sayesinde model, hem görüntü içeriğini hem de eksik bölgeleri aynı anda analiz edebilir.
 
 #### 🔹 Generator (Üretici Ağ)
@@ -131,7 +131,7 @@ Bu mimari sayesinde model:
 
 GAN tabanlı renk ekleme sistemi:
 
-- **Generator:** UNet tabanlı, encoder-decoder mimarisi, 8 encoder + 7 decoder katmanı, skip bağlantılar ile detay koruma.
+- **Generator:** UNet tabanlı, encoder-decoder mimarisi, 8 encoder + 7 decoder katmanı+ 1 adet final output katmanı (d8), skip bağlantılar ile detay koruma.
 
 - **Discriminator:** 4 katmanlı PatchGAN, 70x70 piksellik patchler üzerinden gerçeklik değerlendirmesi.
 
