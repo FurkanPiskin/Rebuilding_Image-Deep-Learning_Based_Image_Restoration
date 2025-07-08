@@ -31,7 +31,7 @@ GAN, iki sinir ağının birbirine karşı yarıştığı bir mimaridir:
 
 Bu yarışma süreci sayesinde generator, giderek daha gerçekçi veriler üretmeyi öğrenir.
 
-![GAN_ARCHİTECTURE](https://github.com/user-attachments/assets/0030e96e-c3f8-4be6-9a3a-5b6fac9ff8fc)
+ <img src="images/1.jpg" />
 
 #### 2.3 Colorization, Inpainting ve Denoising Problemleri
 
@@ -55,7 +55,7 @@ PatchGAN, geleneksel GAN discriminatorlarından farklı olarak, görüntüyü pa
 
 - Her patch için gerçeklik değeri tahmin edilir.
 
-![patch_Gan_arc](https://github.com/user-attachments/assets/3ecb392f-6ae7-4d65-a25e-75c29b4d919d)
+ <img src="images/2.jpg" />
 
 ---
 
@@ -70,7 +70,7 @@ Dikkat mekanizmaları içeren iki aşamalı (coarse-to-fine) yapı:
 
 - **İnce Aşama:** 9 katmanlı iyileştirme ağı, self-attention ile detayların geliştirilmesi.
 
-![two_stage_architecture](https://github.com/user-attachments/assets/c7b0e9e2-5412-4192-a1f7-f0ad78f2d984)
+ <img src="images/3.jpg" />
 
 **Discriminator (Ayırt Edici Ağ):**  
 Spektral normalizasyonlu PatchGAN yapısı:
@@ -135,7 +135,7 @@ GAN tabanlı renk ekleme sistemi:
 
 - **Discriminator:** 4 katmanlı PatchGAN, 70x70 piksellik patchler üzerinden gerçeklik değerlendirmesi.
 
-![unet_Arch](https://github.com/user-attachments/assets/02bc02d1-3bbe-4a63-8d31-4c9b2dfd6ebd)
+ <img src="images/4.jpg" />
 
 **Kayıp Fonksiyonları:**
 
