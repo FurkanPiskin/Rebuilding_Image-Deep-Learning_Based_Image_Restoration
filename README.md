@@ -552,7 +552,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 </p>
 
 <p align="center">
-  <img src="images/colorization3_ilkepoch.jpg" width="60%" />
+  <img src="images/colorization3_sonepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -588,24 +588,24 @@ Bu yöntemlerin uygulanması sonucunda, GAN modelinin stabilitesi önemli ölç�
 
 #### Ana Arayüz
 <p align="center">
-  <img src="images/arayüz_main.jpg" width="60%" />
+  <img src="images/arayüz_main.jpg"  />
 </p>
 ---
 
 #### 📷 Colorization (Renklendirme)
 <p align="center">
-  <img src="images/arayüz_main.jpg" width="60%" />
+  <img src="images/arayüz_main.jpg"/>
 </p>
 ---
 
 #### 🧩 Inpainting (Görüntü Onarma)
 <p align="center">
-  <img src="images/colorization_arayüz.jpg" width="60%" />
+  <img src="images/colorization_arayüz.jpg"/>
 </p>
 ---
 
 #### 🧹 Denoising (Gürültü Giderme)
 <p align="center">
-  <img src="images/denoise_Arayüz.jpg" width="60%" />
+  <img src="images/denoise_Arayüz.jpg" />
 </p>
 
