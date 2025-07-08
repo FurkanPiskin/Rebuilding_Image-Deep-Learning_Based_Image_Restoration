@@ -410,7 +410,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 
 <p align="center">
   <img src="images/denoise2_ilkepoch.jpg" width="45%" />
-  <img src="images/denoise2_sonepoch" width="45%" />
+  <img src="images/denoise2_sonepoch.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
