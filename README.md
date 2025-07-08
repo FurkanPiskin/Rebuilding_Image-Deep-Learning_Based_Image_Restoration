@@ -381,7 +381,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 8.1 Gürültü Giderme (Gaussian Noise)
 
 <p align="center">
-  <img src="images/denoise1_original" width="45%" />
+  <img src="images/denoise1_original.jpg" width="45%" />
   <img src="https://github.com/user-attachments/assets/faa248bc-bdc4-4ff0-8dd4-681d58b14400" width="45%" />
 </p>
 <p align="center">
