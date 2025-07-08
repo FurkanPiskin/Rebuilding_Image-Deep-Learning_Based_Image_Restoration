@@ -369,7 +369,6 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 | **Perceptual Loss (VGG)**    |     ✔️     |       ❌      |     ✔️    | Görüntülerin özellik uzayında benzerliğini ölçerek algısal kaliteyi artırır.           |
 | **Style Loss (Gram Matrix)** |     ✔️     |       ❌      |     ❌     | Görüntülerin stil (doku, renk dağılımı) uyumunu sağlayan gram matrisine dayalı kayıp.  |
 | **Total Variation Loss**     |     ✔️     |       ❌      |     ❌     | Görüntüdeki gürültü ve keskin değişimleri azaltarak pürüzsüzlük sağlar.                |
-| **BCEWithLogits / BCE Loss** |     ✔️     |      ✔️      |     ✔️    | Gerçek/sahte sınıflandırma için kullanılan binary cross entropy kaybı.                 |
 | **MSE Loss (Alternatif)**    |      ❌     |       ❌      | ✔️ (ops.) | Ortalama kare hata, özellikle alternatif içerik veya görüntü farkları için kullanılır. |
 
 
