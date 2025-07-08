@@ -475,7 +475,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 </p>
 
 <p align="center">
-  <img src="images/inpaintg_ilkepoch.jpg" width="60%" />
+  <img src="images/inpaintg_2_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
