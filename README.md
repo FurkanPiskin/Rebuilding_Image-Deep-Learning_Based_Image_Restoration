@@ -254,9 +254,42 @@ Bu kodda bir denoising (gürültü giderme) görevi için iki ana sinir ağı mi
 
 ### Genel Sistem Çalışması
 
-- Generator, gürültülü görüntüyü alır ve temizlenmiş versiyonunu üretir.  
-- Discriminator, gerçek temiz görüntüler ile generator tarafından üretilenleri ayırt etmeye çalışır.  
-- Bu adversarial süreç sonucunda generator giderek daha gerçekçi sonuçlar üretmeyi öğrenir.  
+Bu model, GAN tabanlı bir UNet kullanarak gürültülü görüntüleri temizler. İşleyiş:
+
+**Generator (UNet)**
+
+- Girdi: 3 kanallı (RGB) gürültülü görüntü.
+- Encoder: 7 katmanla özellik çıkarımı yapar.
+- Decoder: Skip connections ile detayları koruyarak temiz görüntü oluşturur.
+- Çıktı: [-1, 1] aralığında normalize edilmiş temizlenmiş görüntü.
+
+**Discriminator (PatchGAN)**
+
+- Görev: Generator çıktısı ile gerçek temiz görüntüyü ayırt eder.
+- Mimari: 4 konvolüsyon katmanı (64→512 filtre).
+- Çıktı: 30x30 boyutunda "gerçek/sahte" puan matrisi.
+
+**Kayıp Fonksiyonları**
+
+- Content Loss (L1): Piksel bazlı hata.
+- Adversarial Loss: Discriminator'ü kandırma.
+- Perceptual Loss (VGG16): Yapısal benzerlik.
+
+** Eğitim Süreci **
+
+- Discriminator: Gerçek ve sahte görüntüleri ayırt eder.
+- Generator: Hem gürültüyü temizler hem de Discriminator'ü kandırmayı öğrenir.
+- EMA: Model kararlılığını artırır.
+
+#### ✅ Sonuç
+
+- Yüksek PSNR/SSIM değerleri.
+- Gaussian, tuz-biber, speckle gürültülerine karşı etkili temizleme.
+- Gerçekçi ve detay koruyan çıktılar.
+- Örnek:
+- [Gürültülü] → [Generator Çıktısı] → [Gerçek Temiz] şeklinde görselleştirme yapılabilir.
+
+
 
 Bu tür mimariler özellikle görüntü restorasyonu, denoising ve image-to-image translation görevlerinde başarılı sonuçlar vermektedir.
 
@@ -305,19 +338,20 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 
 **Denoising**
 
-- Gürültü giderme görevinde temiz görüntülere sentetik gürültü (örn. Gauss) eklenerek modelin gürültüyü ayırt etmeyi öğrenmesi sağlandı:
+- Gürültü giderme görevinde, modelin gürültülü görüntülerden temiz görüntüleri yeniden üretmeyi öğrenmesi hedeflendi.
 
-- Orijinal temiz görüntülerden veri seti oluşturuldu.
+- Orijinal temiz görüntülerden bir veri seti oluşturuldu.
 
-- Her görüntüye eğitim sırasında farklı seviyelerde gürültü eklendi.
+- Veri setindeki yüksek çözünürlüklü görüntülerden, rastgele konumlarda 256x256 boyutlarında parçalara (patch) ayrılarak eğitim örnekleri elde edildi.
 
-- Modelin girişi: Gürültülü görüntü
+- Her 256x256’lık patch’e eğitim sırasında farklı seviyelerde sentetik gürültü (örneğin Gauss gürültüsü) eklendi.
 
-- Modelin hedef çıktısı: Temiz (orijinal) görüntü
+- Modelin girişi: Gürültülü patch
+- Modelin hedef çıktısı: Karşılık gelen temiz patch
 
-- Görüntüler normalize edildi ve sabit boyuta ölçeklendi.
+- Tüm görüntüler eğitimden önce normalize edildi (-1,1).
 
-- İsteğe bağlı olarak veri artırma yöntemleri de eklendi.
+- İsteğe bağlı olarak veri artırma (data augmentation) yöntemleri uygulandı (çevirme, döndürme, parlaklık değişimi vb.).
 
 
 
