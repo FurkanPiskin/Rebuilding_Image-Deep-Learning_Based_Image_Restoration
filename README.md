@@ -381,16 +381,16 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 8.1 Gürültü Giderme (Gaussian Noise)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1067e874-f04d-44c5-92da-04dc6066a3a7" width="45%" />
-  <img src="https://github.com/user-attachments/assets/faa248bc-bdc4-4ff0-8dd4-681d58b14400" width="45%" />
+  <img src="images/denoise1_original.jpg" width="45%" />
+  <img src="images/denoise1_gürültülü.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> Orijinal Görüntü | <b>Sağda:</b> Gürültülü Girdi
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37caa500-e279-4c75-82ee-0d9daeed25bc" width="45%" />
-  <img src="https://github.com/user-attachments/assets/6da13fb6-938f-42b3-bcb5-c4d26c0d2599" width="45%" />
+  <img src="images/denoise1_ilkepoch.jpg" width="45%" />
+  <img src="images/denoise1_sonepoch.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
@@ -401,16 +401,16 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 8.2 Gürültü Giderme (Salt & Pepper Noise)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4c898994-6d7b-4966-96c7-a076da8b2cd3" width="45%" />
-  <img src="https://github.com/user-attachments/assets/ef66b452-0baa-472a-82b3-ec7760dc11ed" width="45%" />
+  <img src="images/denoise2_original.jpg" width="45%" />
+  <img src="images/denoise2_tuzbiber.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> Orijinal Görüntü | <b>Sağda:</b> Tuz & Biber Gürültülü Girdi
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9d4769e3-0f65-4567-98a6-ca51d05b682f" width="45%" />
-  <img src="https://github.com/user-attachments/assets/890edb78-0391-4e9a-b38d-d6f71ba435fb" width="45%" />
+  <img src="images/denoise2_ilkepoch.jpg" width="45%" />
+  <img src="images/denoise2_sonepoch.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
@@ -421,16 +421,16 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 8.3 Gürültü Giderme (Başka Bir Örnek)
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/24a8e840-3bd8-4bff-91c7-dcc39301571b" width="45%" />
-  <img src="https://github.com/user-attachments/assets/028c8c4e-1730-4665-bca5-ef3275590298" width="45%" />
+  <img src="images/denoise3_original.jpg" width="45%" />
+  <img src="images/denoise3_gürültülü.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> Orijinal Görüntü | <b>Sağda:</b> Gürültülü Girdi
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a3e0c897-59a3-43a4-bc5d-d13cc317d76f" width="45%" />
-  <img src="https://github.com/user-attachments/assets/22906fbb-0e68-49f1-a7c9-827b9db8ce4d" width="45%" />
+  <img src="images/denoise3_ilkepoch.jpg" width="45%" />
+  <img src="images/denoise3_sonepoch.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
@@ -443,21 +443,21 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 9.1 Inpainting Örneği 1
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1865faec-74c4-4e1d-98f1-28f0f3ca30ca" width="60%" />
+  <img src="images/inpainting1_original.jpg" width="60%" />
 </p>
 <p align="center">
-  <b>Orijinal (maskelenmiş) Görüntü</b>
+  <b>Orijinal  Görüntü</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37597def-b1c4-4df8-be64-2d4bb3736300" width="60%" />
+  <img src="images/inpainting_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e7ceb2ae-b5f0-4e78-8a7f-2b8086286233" width="60%" />
+  <img src="images/inpainting_Sonepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -468,21 +468,21 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 9.2 Inpainting Örneği 2
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b2febb75-622d-4580-a3d6-c3e8da588082" width="60%" />
+  <img src="images/inpainting2_original.jpg" width="60%" />
 </p>
 <p align="center">
-  <b>Orijinal (maskelenmiş) Görüntü</b>
+  <b>Orijinal Görüntü</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/07742705-e0c6-4b51-bf2e-30ac77eb76a2" width="60%" />
+  <img src="images/inpaintg_2_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e3c5ce0a-234c-485d-8c51-66820ffc63d2" width="60%" />
+  <img src="images/inpainting2_sonepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -493,9 +493,9 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ## 10. Colorization – Gri Tonlama Görüntüler
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/09ec76a4-b30d-4056-8963-ee564a1f8be0" width="30%" />
-  <img src="https://github.com/user-attachments/assets/48b02864-d770-466b-bf89-8037ae12875b" width="30%" />
-  <img src="https://github.com/user-attachments/assets/c76acb5e-da91-4936-8de9-85ea659d7018" width="30%" />
+  <img src="images/colorization1_original.jpg" width="30%" />
+  <img src="images/colorization2_original.jpg" width="30%" />
+  <img src="images/original3.jpg" width="30%" />
 </p>
 
 <p align="center">
@@ -509,14 +509,14 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 11.1 Example 1
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/db874f5d-1f93-473e-9128-494ce238dadf" width="60%" />
+  <img src="images/colorization1_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7a21f257-a6d3-4de9-b93c-dc0b60e2eec9" width="60%" />
+  <img src="images/colorization1_sonepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -527,14 +527,14 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 11.2 Example 2
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/71eba4dd-613a-4396-b800-159ed3f6cb72" width="60%" />
+  <img src="images/colorization2_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c800f5d-a727-4cda-958d-9f62fe5fb2cf" width="60%" />
+  <img src="images/colorization2_sonepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -545,14 +545,14 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 11.3 Example 3
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c2d5ad5-1ea2-4c01-95ac-33201640821d" width="60%" />
+  <img src="images/colorization3_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c4f4d3c2-3a5d-48ce-bdd9-de0f677c1a8d" width="60%" />
+  <img src="images/colorization3_ilkepoch.jpg" width="60%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -587,20 +587,25 @@ Bu yöntemlerin uygulanması sonucunda, GAN modelinin stabilitesi önemli ölç�
 ### 🎨 11.Uygulama Arayüzleri
 
 #### Ana Arayüz
-![Ana Arayüz](https://github.com/user-attachments/assets/b140d584-cf8a-4adc-8f97-e5fbb0da9f48)
-
+<p align="center">
+  <img src="images/arayüz_main.jpg" width="60%" />
+</p>
 ---
 
 #### 📷 Colorization (Renklendirme)
-![Colorization Arayüzü](https://github.com/user-attachments/assets/64448fc5-e184-4543-92dc-aed46649e252)
-
+<p align="center">
+  <img src="images/arayüz_main.jpg" width="60%" />
+</p>
 ---
 
 #### 🧩 Inpainting (Görüntü Onarma)
-![Inpainting Arayüzü](https://github.com/user-attachments/assets/b207fdc0-115d-4931-89ff-835a1cf54b1f)
-
+<p align="center">
+  <img src="images/colorization_arayüz.jpg" width="60%" />
+</p>
 ---
 
 #### 🧹 Denoising (Gürültü Giderme)
-![Denoising Arayüzü](https://github.com/user-attachments/assets/9b853636-168b-42d2-b63e-ed949ff05900)
+<p align="center">
+  <img src="images/denoise_Arayüz.jpg" width="60%" />
+</p>
 
