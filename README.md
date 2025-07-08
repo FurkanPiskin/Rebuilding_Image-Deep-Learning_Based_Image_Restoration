@@ -594,13 +594,13 @@ Bu yöntemlerin uygulanması sonucunda, GAN modelinin stabilitesi önemli ölç�
 
 #### 📷 Colorization (Renklendirme)
 <p align="center">
-  <img src="images/arayüz_main.jpg"/>
+  <img src="images/colorization_arayüz.jpg"/>
 </p>
 ---
 
 #### 🧩 Inpainting (Görüntü Onarma)
 <p align="center">
-  <img src="images/colorization_arayüz.jpg"/>
+  <img src="images/inpainting_arayüz.jpg"/>
 </p>
 ---
 
