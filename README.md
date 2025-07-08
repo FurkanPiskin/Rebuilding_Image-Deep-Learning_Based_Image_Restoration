@@ -402,7 +402,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 
 <p align="center">
   <img src="images/denoise2_original.jpg" width="45%" />
-  <img src="images/denoise2_gürültülü.jpg" width="45%" />
+  <img src="images/denoise2_tuzbiber.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> Orijinal Görüntü | <b>Sağda:</b> Tuz & Biber Gürültülü Girdi
@@ -410,7 +410,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 
 <p align="center">
   <img src="images/denoise2_ilkepoch.jpg" width="45%" />
-  <img src="images/denoise2_sonepoch.jpg" width="45%" />
+  <img src="images/denoise2_sonepoch" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
@@ -430,7 +430,7 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 
 <p align="center">
   <img src="images/denoise3_ilkepoch.jpg" width="45%" />
-  <img src="images/denoise2_sonepoch.jpg" width="45%" />
+  <img src="images/denoise3_sonepoch.jpg" width="45%" />
 </p>
 <p align="center">
   <b>Solda:</b> İlk Epoch Çıktısı | <b>Sağda:</b> Son Epoch Çıktısı
