@@ -450,14 +450,14 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 </p>
 
 <p align="center">
-  <img src="images/inpainting_ilkepoch.jpg" width="60%" />
+  <img src="images/inpainting_ilkepoch.jpg" width="80%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="images/inpainting_Sonepoch.jpg" width="60%" />
+  <img src="images/inpainting_Sonepoch.jpg" width="80%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
@@ -468,21 +468,21 @@ Input = [Masked_Image, Mask] → 4 kanallı giriş
 ### 9.2 Inpainting Örneği 2
 
 <p align="center">
-  <img src="images/inpainting2_original.jpg" width="60%" />
+  <img src="images/inpainting2_original.jpg" width="80%" />
 </p>
 <p align="center">
   <b>Orijinal Görüntü</b>
 </p>
 
 <p align="center">
-  <img src="images/inpaintg_2_ilkepoch.jpg" width="60%" />
+  <img src="images/inpaintg_2_ilkepoch.jpg" width="80%" />
 </p>
 <p align="center">
   <b>İlk Epoch Çıktısı</b>
 </p>
 
 <p align="center">
-  <img src="images/inpainting2_sonepoch.jpg" width="60%" />
+  <img src="images/inpainting2_sonepoch.jpg" width="80%" />
 </p>
 <p align="center">
   <b>Son Epoch Çıktısı</b>
